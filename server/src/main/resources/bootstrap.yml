@@ -1,0 +1,15 @@
+eureka:
+  client:
+    service-url:
+      dufaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: user
+  cloud:
+    config:
+      discovery:
+        service-id: CONFIG
+        enabled: true
+      profile: dev
+
+
